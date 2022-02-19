@@ -1,6 +1,9 @@
 package square
 
-import "testing"
+import (
+	"math"
+	"testing"
+)
 
 const EXECTURE_TEXT = "The result is not equal to the expectation"
 
@@ -23,8 +26,8 @@ func Test_CalcSquareSquare(t *testing.T) {
 }
 
 func Test_CalcSquareOval(t *testing.T) {
-	res := CalcSquare(10.0, SidesCircle)
-	wait := float64(7.957747154594767)
+	res := CalcSquare(1, SidesCircle)
+	wait := float64(math.Pi)
 
 	if res != wait {
 		t.Fatalf(EXECTURE_TEXT)

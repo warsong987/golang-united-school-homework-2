@@ -41,6 +41,5 @@ func CalcSquareSquare(sideLen float64) float64 {
 }
 
 func CalcSquareOval(sideLen float64) float64 {
-	squar := (sideLen * sideLen) / (4 * math.Pi)
-	return squar
+	return sideLen * sideLen * math.Pi
 }
