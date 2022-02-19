@@ -40,6 +40,6 @@ func CalcSquareSquare(sideLen float64) float64 {
 	return sideLen * sideLen
 }
 
-func CalcSquareOval(sideLen float64) float64 {
-	return sideLen * sideLen * math.Pi
+func CalcSquareOval(radius float64) float64 {
+	return math.Pi * radius * radius
 }
